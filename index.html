@@ -1,32 +1,78 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Guess My Number!</title>
-  </head>
-  <body>
-    <header>
-      <h1>Guess My Number!</h1>
-      <p class="between">(Between 1 and 20)</p>
-      <button class="btn again">Again!</button>
-      <div class="number">?</div>
-    </header>
-    <main>
-      <section class="left">
-        <input type="number" class="guess" />
-        <button class="btn check">Check!</button>
-      </section>
-      <section class="right">
-        <p class="message">Start guessing...</p>
-        <p class="label-score">💯 Score: <span class="score">20</span></p>
-        <p class="label-highscore">
-          🥇 Highscore: <span class="highscore">0</span>
-        </p>
-      </section>
-    </main>
-    <script src="02_logic_REFACTORED.js"></script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Builder's Code — practical building, renovations, repairs and project finishing across the Western Cape.">
+  <meta name="theme-color" content="#171714">
+  <title>Builder's Code | Building & Renovations</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Builder's Code home">Builder's <span>Code</span></a>
+    <nav aria-label="Primary navigation">
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#process">Process</a>
+      <a class="nav-cta" href="#contact">Get a quote</a>
+    </nav>
+  </header>
+  <main id="top">
+    <section class="hero shell">
+      <div class="hero-copy">
+        <p class="kicker">BUILDING · RENOVATIONS · MAINTENANCE</p>
+        <h1>Built properly.<br><span>Finished cleanly.</span></h1>
+        <p class="hero-text">Straightforward building and renovation work, handled with care from the first quote to the final walkthrough.</p>
+        <div class="hero-actions">
+          <a class="button button-gold" href="#contact">Request a quote <span aria-hidden="true">↗</span></a>
+          <a class="button button-ghost" href="#work">View recent work</a>
+        </div>
+      </div>
+      <figure class="hero-image">
+        <img src="assets/hero.jpg" alt="Modern residential renovation with warm interior lighting" width="702" height="429">
+        <figcaption>Quality work. Clear communication. No unnecessary drama.</figcaption>
+      </figure>
+    </section>
+    <section id="services" class="service-band" aria-label="Services">
+      <div class="service-grid shell">
+        <article><span class="service-number">01</span><div><h2>Renovations</h2><p>Kitchens, bathrooms, interiors and complete refreshes.</p></div></article>
+        <article><span class="service-number">02</span><div><h2>Building work</h2><p>Alterations, additions, walls, ceilings, paving and general construction.</p></div></article>
+        <article><span class="service-number">03</span><div><h2>Repairs</h2><p>Water damage, patch work, repainting, waterproofing and practical fixes.</p></div></article>
+        <article><span class="service-number">04</span><div><h2>Finishing</h2><p>The final details that make a project feel complete and ready to use.</p></div></article>
+      </div>
+    </section>
+    <section id="work" class="work shell section-space">
+      <div class="section-heading">
+        <div><p class="kicker">SELECTED WORK</p><h2>Work, presented<br>properly.</h2></div>
+        <p>A clean project showcase ready for real completed-job photography. The current imagery is presentation artwork and can be swapped without touching the layout.</p>
+      </div>
+      <div class="project-grid">
+        <article class="project project-featured"><img src="assets/hero.jpg" alt="Contemporary residential exterior and outdoor living area"><div class="project-copy"><div><h3>Residential upgrade</h3><p>Exterior works · lighting · finishes</p></div><span>01</span></div></article>
+        <article class="project"><img src="assets/hero.jpg" alt="Modern residential renovation"><div class="project-copy"><div><h3>Kitchen renovation</h3><p>Cabinetry · surfaces · lighting</p></div><span>02</span></div></article>
+        <article class="project"><img src="assets/hero.jpg" alt="Modern residential renovation"><div class="project-copy"><div><h3>Bathroom renovation</h3><p>Tiling · plumbing · finishes</p></div><span>03</span></div></article>
+        <article class="project"><img src="assets/hero.jpg" alt="Modern residential renovation"><div class="project-copy"><div><h3>Outdoor living</h3><p>Paving · screens · landscaping finishes</p></div><span>04</span></div></article>
+      </div>
+    </section>
+    <section id="process" class="process section-space">
+      <div class="process-inner shell">
+        <div class="process-title"><p class="kicker kicker-light">HOW IT WORKS</p><h2>A simple process.<br>No theatre.</h2></div>
+        <ol>
+          <li><span>01</span><div><h3>Show us the job</h3><p>Send photos, measurements and a short description, or arrange a site visit.</p></div></li>
+          <li><span>02</span><div><h3>Get a clear quote</h3><p>Scope, materials and labour are laid out before work starts.</p></div></li>
+          <li><span>03</span><div><h3>We build</h3><p>The work gets done with one accountable point of contact and practical updates.</p></div></li>
+          <li><span>04</span><div><h3>Final walkthrough</h3><p>We check the finish with you and close out any final details before handover.</p></div></li>
+        </ol>
+      </div>
+    </section>
+    <section id="contact" class="contact shell section-space">
+      <div><p class="kicker">HAVE A JOB IN MIND?</p><h2>Send the details.<br><span>We’ll take it from there.</span></h2></div>
+      <div class="contact-copy"><p>Share a few photos, your area and what you need done. That is enough to start the conversation and work out whether a site visit is needed.</p><p class="contact-note">Add the contractor’s WhatsApp number here before publishing the final domain.</p></div>
+    </section>
+  </main>
+  <footer class="shell"><a class="brand brand-footer" href="#top">Builder's <span>Code</span></a><p>Building, renovations and maintenance · Western Cape</p><p>© 2026 Builder's Code</p></footer>
+</body>
 </html>
