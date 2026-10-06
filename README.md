@@ -1,6 +1,6 @@
 # Builder Co
 
-A lightweight one-page contractor portfolio built with plain HTML and CSS.
+A lightweight one-page contractor portfolio built with plain HTML and CSS, with a working quote-request form.
 
 ## Stack
 - HTML
@@ -18,3 +18,7 @@ The site is static and ready for GitHub Pages, Netlify, Cloudflare Pages, or any
 
 ## Image sources
 The current visual references are free-to-use photos from Unsplash and are not presented as Builder Co's own completed projects. Replace them with real job photos when available.
+
+
+## Quote form
+The quote form posts through FormSubmit to the configured inbox. The first live submission may trigger a one-time FormSubmit activation email that must be confirmed before later submissions are delivered.
