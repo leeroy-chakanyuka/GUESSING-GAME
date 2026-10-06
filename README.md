@@ -1,24 +1,22 @@
 # Builder Co
 
-A lightweight one-page contractor portfolio built with plain HTML and CSS, with a working quote-request form.
+A lightweight one-page contractor portfolio built with plain HTML and CSS.
 
 ## Stack
 - HTML
 - CSS
-- Responsive imagery sourced from standard Unsplash-licensed photos
+- Netlify Forms for quote requests
+- Responsive imagery sourced from Unsplash
 - No JavaScript framework
 - No build step
 
-## Before final public launch
-Replace the contact note in `index.html` with the contractor's real WhatsApp/phone details and replace the licensed reference imagery with real completed-job photos when available.
+## Quote form
+The quote form is configured for Netlify Forms. Deploy the repository on Netlify with form detection enabled and submissions will appear in the site's Forms area.
+
+The form intentionally has no budget field. It asks only for the job details needed to start a quote.
 
 ## Deployment
-The site is static and ready for GitHub Pages, Netlify, Cloudflare Pages, or any normal web host.
+Use Netlify for the production deployment so the built-in quote form is processed. The site itself remains a static HTML/CSS site.
 
-
-## Image sources
-The current visual references are free-to-use photos from Unsplash and are not presented as Builder Co's own completed projects. Replace them with real job photos when available.
-
-
-## Quote form
-The quote form posts through FormSubmit to the configured inbox. The first live submission may trigger a one-time FormSubmit activation email that must be confirmed before later submissions are delivered.
+## Images
+The current images are visual references and are not presented as Builder Co's completed projects. Replace them with real project photos when available.
